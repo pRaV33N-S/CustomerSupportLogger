@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CustomSupportLogger.props" />
+</Project>

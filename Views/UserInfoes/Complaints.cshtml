@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Add Customer's Complaints";
+}
+
+<h2>Add Customer's Complaints</h2>
+
+@using (Html.BeginForm("AddComplaint", "Complaint", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <label class="control-label">Log ID</label>
+        <input type="text" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Customer Email</label>
+        <input type="text" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Customer Name</label>
+        <input type="text" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Log Status</label>
+        <input type="text" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Description</label>
+        <input type="text" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <button type="button" class="btn btn-secondary">Clear</button>
+}
